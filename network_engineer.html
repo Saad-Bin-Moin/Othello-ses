@@ -46,21 +46,24 @@
     <script type="text/javascript">
       function googleTranslateElementInit() {
         new google.translate.TranslateElement(
-          { pageLanguage: 'en', includedLanguages: 'en,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
-          'google_translate_element'
+          {
+            pageLanguage: "en",
+            includedLanguages: "en,ja",
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          },
+          "google_translate_element"
         );
       }
     </script>
     <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <style>
       #google_translate_element select {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 5px;
-  font-size: 14px;
-  color: #333;
-}
-
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 14px;
+        color: #333;
+      }
     </style>
   </head>
 
@@ -73,54 +76,329 @@
       <header class="header">
         <div class="container">
           <div class="row">
-            <nav class="navbar navbar-expand-lg">
+            <nav
+              class="navbar navbar-expand-lg"
+              style="background-color: #fff; padding: 10px 0"
+            >
               <a class="navbar-brand" href="index.html">
                 <!-- <h1 class="m-0">WONTED</h1> -->
                 <img src="assets/images/logo.svg" alt="Othello" />
               </a>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul id="onepage-nav" class="navbar-nav menu ms-lg-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item dropdown submenu">
+                <ul
+                  id="onepage-nav"
+                  class="navbar-nav menu ms-lg-auto"
+                  style="list-style: none; margin: 0; padding: 0; display: flex"
+                >
+                  <li class="nav-item" style="position: relative">
                     <a
-                      class="nav-link active dropdown-toggle"
+                      class="nav-link"
+                      href="#benefits"
+                      style="
+                        padding: 10px 15px;
+                        text-decoration: none;
+                        color: #333;
+                      "
+                      >Home</a
+                    >
+                  </li>
+                  <!-- Services Dropdown -->
+                  <li
+                    class="nav-item dropdown submenu"
+                    style="position: relative"
+                  >
+                    <a
+                      class="nav-link dropdown-toggle"
                       href="#hero"
                       role="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
-                      >Services
+                      style="
+                        padding: 10px 15px;
+                        text-decoration: none;
+                        color: #333;
+                      "
+                    >
+                      Services
                     </a>
                     <span
                       class="sub-menu-toggle dropdown-toggle"
                       role="button"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
+                      style="
+                        cursor: pointer;
+                        padding-left: 5px;
+                        font-size: 1.2rem;
+                      "
                     >
-                      <i class="icofont-rounded-down"></i>
+                      <i
+                        class="icofont-rounded-down"
+                        style="font-size: 16px"
+                      ></i>
                     </span>
-                    <ul class="dropdown-menu">
-                      <li class="nav-item">
-                        <a href="index.html" class="nav-link">IT Support</a>
+                    <ul
+                      class="dropdown-menu"
+                      style="
+                        position: absolute;
+                        display: none;
+                        visibility: hidden;
+                        background-color: #fff;
+                        border: 1px solid #ddd;
+                        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                        min-width: 180px;
+                        padding: 0;
+                        list-style: none;
+                        margin: 0;
+                      "
+                    >
+                      <li class="nav-item dropdown" style="position: relative">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          style="
+                            padding: 8px 16px;
+                            text-decoration: none;
+                            color: #333;
+                            display: block;
+                          "
+                        >
+                          IT Support
+                        </a>
+                        <ul
+                          class="dropdown-menu"
+                          style="
+                            position: absolute;
+                            top: 0;
+                            left: 100%;
+                            display: none;
+                            visibility: hidden;
+                            background-color: #fff;
+                            border: 1px solid #ddd;
+                            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                            min-width: 180px;
+                            padding: 0;
+                            list-style: none;
+                            margin: 0;
+                          "
+                        >
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              style="
+                                padding: 8px 16px;
+                                text-decoration: none;
+                                color: #333;
+                              "
+                              >A</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              style="
+                                padding: 8px 16px;
+                                text-decoration: none;
+                                color: #333;
+                              "
+                              >B</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              style="
+                                padding: 8px 16px;
+                                text-decoration: none;
+                                color: #333;
+                              "
+                              >C</a
+                            >
+                          </li>
+                        </ul>
                       </li>
-                      <li class="nav-item">
-                        <a href="ai_ml.html" class="nav-link">AI</a>
+                      <li class="nav-item dropdown" style="position: relative">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          style="
+                            padding: 8px 16px;
+                            text-decoration: none;
+                            color: #333;
+                            display: block;
+                          "
+                        >
+                          AI
+                        </a>
+                        <ul
+                          class="dropdown-menu"
+                          style="
+                            position: absolute;
+                            top: 0;
+                            left: 100%;
+                            display: none;
+                            visibility: hidden;
+                            background-color: #fff;
+                            border: 1px solid #ddd;
+                            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                            min-width: 180px;
+                            padding: 0;
+                            list-style: none;
+                            margin: 0;
+                          "
+                        >
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              style="
+                                padding: 8px 16px;
+                                text-decoration: none;
+                                color: #333;
+                              "
+                              >A</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              style="
+                                padding: 8px 16px;
+                                text-decoration: none;
+                                color: #333;
+                              "
+                              >B</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              style="
+                                padding: 8px 16px;
+                                text-decoration: none;
+                                color: #333;
+                              "
+                              >C</a
+                            >
+                          </li>
+                        </ul>
                       </li>
-                      <li class="nav-item">
-                        <a href="software.html" class="nav-link">Software Engineer</a>
-                      </li>
+                      <li class="nav-item dropdown" style="position: relative">
+                        <a
+                          class="nav-link dropdown-toggle"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          style="
+                            padding: 8px 16px;
+                            text-decoration: none;
+                            color: #333;
+                            display: block;
+                          "
+                        >
+                          Software Engineering
+                        </a>
+                        <ul
+                          class="dropdown-menu"
+                          style="
+                            position: absolute;
+                            top: 0;
+                            left: 100%;
+                            display: none;
+                            visibility: hidden;
+                            background-color: #fff;
+                            border: 1px solid #ddd;
+                            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                            min-width: 180px;
+                            padding: 0;
+                            list-style: none;
+                            margin: 0;
+                          "
+                        >
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              style="
+                                padding: 8px 16px;
+                                text-decoration: none;
+                                color: #333;
+                              "
+                              >A</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              style="
+                                padding: 8px 16px;
+                                text-decoration: none;
+                                color: #333;
+                              "
+                              >B</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="dropdown-item"
+                              href="#"
+                              style="
+                                padding: 8px 16px;
+                                text-decoration: none;
+                                color: #333;
+                              "
+                              >C</a
+                            >
+                          </li>
+                        </ul>
                       </li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#reviews">Testimonials</a>
+                    <a
+                      class="nav-link"
+                      href="#reviews"
+                      style="
+                        padding: 10px 15px;
+                        text-decoration: none;
+                        color: #333;
+                      "
+                      >Testimonials</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a
+                      class="nav-link"
+                      href="#about"
+                      style="
+                        padding: 10px 15px;
+                        text-decoration: none;
+                        color: #333;
+                      "
+                      >About</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#ctav3">Contact Us</a>
+                    <a
+                      class="nav-link"
+                      href="#ctav3"
+                      style="
+                        padding: 10px 15px;
+                        text-decoration: none;
+                        color: #333;
+                      "
+                      >Contact Us</a
+                    >
                   </li>
                 </ul>
                 <div id="google_translate_element" class="ms-3"></div>
@@ -133,308 +411,68 @@
                 aria-controls="navbarSupportedContent"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
+                style="
+                  border: none;
+                  background: transparent;
+                  padding: 10px 20px;
+                "
               >
-                <span></span><span></span><span></span><span></span><span></span
-                ><span></span>
+                <span
+                  style="
+                    display: block;
+                    width: 20px;
+                    height: 3px;
+                    background-color: #333;
+                    margin: 4px 0;
+                  "
+                ></span>
+                <span
+                  style="
+                    display: block;
+                    width: 20px;
+                    height: 3px;
+                    background-color: #333;
+                    margin: 4px 0;
+                  "
+                ></span>
+                <span
+                  style="
+                    display: block;
+                    width: 20px;
+                    height: 3px;
+                    background-color: #333;
+                    margin: 4px 0;
+                  "
+                ></span>
               </button>
             </nav>
           </div>
         </div>
       </header>
+
       <!-- ========== Header end ========== -->
-
-<!-- ========== Header start ========== -->
-<header class="header">
-  <div class="container">
-    <div class="row">
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/images/logo.svg" alt="Othello" />
-        </a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul id="onepage-nav" class="navbar-nav menu ms-lg-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown submenu">
-              <a
-                class="nav-link active dropdown-toggle"
-                href="#hero"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >Services</a>
-              <span
-                class="sub-menu-toggle dropdown-toggle"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i class="icofont-rounded-down"></i>
-              </span>
-              <ul class="dropdown-menu">
-                <li class="nav-item">
-                  <a href="index.html" class="nav-link">IT Support</a>
-                </li>
-                <li class="nav-item">
-                  <a href="ai_ml.html" class="nav-link">AI</a>
-                </li>
-                <li class="nav-item">
-                  <a href="software.html" class="nav-link">Software Engineer</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#reviews">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#ctav3">Contact Us</a>
-            </li>
-          </ul>
-          <div id="google_translate_element" class="ms-3"></div>
-        </div>
-        <button
-          class="navbar-toggler collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+      <section
+        id="hero"
+        class="hero hero__padding overflow-hidden position-relative bg-one"
+      >
+        <!-- Slide 1: IT Support -->
+        <div
+          class="carousel-item active"
+          style="
+            background-image: url('assets/images/Software Engineering.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+          "
         >
-          <span></span><span></span><span></span><span></span><span></span><span></span>
-        </button>
-      </nav>
-    </div>
-  </div>
-</header>
-<!-- ========== Header end ========== -->
-
-<section id="hero" class="hero hero__padding overflow-hidden position-relative bg-one" style="height: 100vh;">
-  <!-- Carousel Start -->
-  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-    <div class="carousel-inner">
-      
-      <!-- Slide 1: IT Support -->
-      <div class="carousel-item" style="background-image: url('assets/images/IT Support.png'); background-size: cover; background-position: center; height: 100vh;">
-        <div class="carousel-caption d-flex justify-content-center align-items-center" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; z-index: 10; height: 100%;">
-          <div>
-            <h1 style="color: white; font-size: 3rem; font-weight: bold;">IT Support</h1>
-            <p style="color: white; font-size: 1.5rem;">Desktop Support Engineer</p>
-            <p style="color: white; font-size: 1.5rem;">IT Support Engineer</p>
-            <p style="color: white; font-size: 1.5rem;">Data Center Engineer</p>
-            <p style="color: white; font-size: 1.5rem;">Network Engineer</p>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Slide 2: Software Engineering -->
-      <div class="carousel-item active" style="background-image: url('assets/images/Software Engineering.png'); background-size: cover; background-position: center; height: 100vh;">
-        <div class="carousel-caption d-flex justify-content-center align-items-center" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; z-index: 10; height: 100%;">
-          <div>
-            <h1 style="color: white; font-size: 3rem; font-weight: bold;">Software Engineering</h1>
-            <p style="color: white; font-size: 1.5rem;">Desktop Support Engineer</p>
-            <p style="color: white; font-size: 1.5rem;">IT Support Engineer</p>
-            <p style="color: white; font-size: 1.5rem;">Data Center Engineer</p>
-            <p style="color: white; font-size: 1.5rem;">Network Engineer</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Slide 3: AI -->
-      <div class="carousel-item" style="background-image: url('assets/images/AI.png'); background-size: cover; background-position: center; height: 100vh;">
-        <div class="carousel-caption d-flex justify-content-center align-items-center" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; z-index: 10; height: 100%;">
-          <div>
-            <h1 style="color: white; font-size: 3rem; font-weight: bold;">Artificial Intelligence</h1>
-            <p style="color: white; font-size: 1.5rem;">Desktop Support Engineer</p>
-            <p style="color: white; font-size: 1.5rem;">IT Support Engineer</p>
-            <p style="color: white; font-size: 1.5rem;">Data Center Engineer</p>
-            <p style="color: white; font-size: 1.5rem;">Network Engineer</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Carousel Indicators -->
-    <div class="carousel-indicators mt-4">
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-  </div>
-  <!-- Carousel End -->
-</section>
-
-      
-      <!-- ========== Achieve section start ========== -->
-      <section id="benefits" class="achieve section-padding">
-        <div class="container">
-          <div class="row">
-            <div class="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
-              <div class="section-title-center text-center">
-                <span
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="150"
-                  >Why Choose Us?</span
-                >
-                <h2
-                  class="display-6"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="200"
-                >
-                  We provide Talented Manpower for Dedicated IT Support Services.
-                </h2>
-                <div
-                  class="section-divider divider-traingle"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="250"
-                ></div>
-              </div>
-            </div>
-          </div>
-          <div class="row gx-5">
-            <div class="col-lg-12">
-              <div class="achieve__content">
-                <div class="row">
-                 
-                  <!--  Desktop Support Engineer -->
-<div
-class="col-sm-4 mb-4"
-data-aos="fade-up"
-data-aos-duration="1000"
-data-aos-delay="200"
->
-<a href="desktop_support_engineer.html" style="text-decoration: none; color: inherit;">
-  <div class="achieve__content__item h-100 translateEffect2">
-    <div class="achieve__icon m-20px-b">
-      <i class="icofont-support"></i>
-    </div>
-    <h3 class="m-15px-b">Desktop Support Engineer</h3>
-    <p>
-      Dedicated professionals providing technical support to resolve
-      your IT issues efficiently.
-    </p>
-  </div>
-</a>
-</div>
-
- <!-- IT Support Engineer -->
-
-<div
-  class="col-sm-4 mb-4"
-  data-aos="fade-up"
-  data-aos-duration="1000"
-  data-aos-delay="500"
->
-  <a href="it_support_engineer.html" style="text-decoration: none; color: inherit;">
-    <div class="achieve__content__item h-100 translateEffect2">
-      <div class="achieve__icon m-20px-b">
-        <i class="icofont-tools"></i>
-      </div>
-      <h3 class="m-15px-b">IT Support Engineer</h3>
-      <p>
-        Skilled engineers to troubleshoot and optimize your IT systems, minimizing downtime.
-      </p>
-    </div>
-  </a>
-</div>
-
-<!-- Data Center Engineer -->
-<div
-  class="col-sm-4 mb-4"
-  data-aos="fade-up"
-  data-aos-duration="1000"
-  data-aos-delay="300"
->
-  <a href="data_center_engineer.html" style="text-decoration: none; color: inherit;">
-    <div class="achieve__content__item h-100 translateEffect2">
-      <div class="achieve__icon m-20px-b">
-        <i class="icofont-database"></i>
-      </div>
-      <h3 class="m-15px-b">Data Center Engineer</h3>
-      <p>
-        Experts in managing and maintaining your data center operations with reliability and scalability.
-      </p>
-    </div>
-  </a>
-</div>
-
-<!-- Network Engineer -->
-<div
-  class="col-sm-4 mb-4"
-  data-aos="fade-up"
-  data-aos-duration="1000"
-  data-aos-delay="300"
->
-  <a href="network_engineer.html" style="text-decoration: none; color: inherit;">
-    <div class="achieve__content__item h-100 translateEffect2">
-      <div class="achieve__icon m-20px-b">
-        <i class="icofont-network"></i>
-      </div>
-      <h3 class="m-15px-b">Network Engineer</h3>
-      <p>
-        Professionals ensuring smooth, secure, and high-performance networking infrastructure.
-      </p>
-    </div>
-  </a>
-</div>
-
-<!-- Data Center Engineer -->
-<div
-class="col-sm-4 mb-4"
-data-aos="fade-up"
-data-aos-duration="1000"
-data-aos-delay="300"
->
-<a href="data-center-details.html" style="text-decoration: none; color: inherit;">
-  <div class="achieve__content__item h-100 translateEffect2">
-    <div class="achieve__icon m-20px-b">
-      <i class="icofont-database"></i>
-    </div>
-    <h3 class="m-15px-b">Data Center Engineer</h3>
-    <p>
-      Experts in managing and maintaining your data center operations with reliability and scalability.
-    </p>
-  </div>
-</a>
-</div>
-
-<!-- Network Engineer -->
-<div
-class="col-sm-4 mb-4"
-data-aos="fade-up"
-data-aos-duration="1000"
-data-aos-delay="300"
->
-<a href="network-engineer-details.html" style="text-decoration: none; color: inherit;">
-  <div class="achieve__content__item h-100 translateEffect2">
-    <div class="achieve__icon m-20px-b">
-      <i class="icofont-network"></i>
-    </div>
-    <h3 class="m-15px-b">Network Engineer</h3>
-    <p>
-      Professionals ensuring smooth, secure, and high-performance networking infrastructure.
-    </p>
-  </div>
-</a>
-</div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="row align-items-center" style="height: 100%"></div>
         </div>
       </section>
+      <!-- ========== Header section End ========== -->
 
-      <!-- ========== Achieve section end ========== -->
-      <!-- ========== Chapters section start ========== -->
-      <section id="chapters" class="section-padding bg-one">
+      <!-- ========== Page Data section start ========== -->
+      <!-- ========== Blog section start ========== -->
+      <section id="about" class="section-padding authorv2">
         <div class="container">
           <div class="row">
             <div class="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
@@ -443,15 +481,15 @@ data-aos-delay="300"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                   data-aos-delay="150"
-                  >Services</span
-                >
+                  >More Details About
+                </span>
                 <h2
                   class="display-6"
                   data-aos="fade-up"
                   data-aos-duration="1000"
                   data-aos-delay="200"
                 >
-                  Our Engineers Excel in Delivering These Services
+                  Network Engineer
                 </h2>
                 <div
                   class="section-divider divider-traingle"
@@ -463,161 +501,65 @@ data-aos-delay="300"
             </div>
           </div>
           <div class="row gx-5">
+            <!-- Company image area start -->
             <div
-              class="col-lg-6 mb-4 mb-lg-0 d-flex justify-content-center align-items-center"
+              class="col-lg-6 mb-4 mb-lg-0"
               data-aos="fade-right"
               data-aos-duration="1000"
               data-aos-delay="200"
             >
-              <img
-                src="assets/images/2506387-removebg-preview.png"
-                alt="" width="750px"
-                class="img-fluid d-block"
-              />
+              <div class="authorv2__image">
+                <!-- Image Section -->
+                <img
+                  class="img-fluid"
+                  src="assets/images/Network photo 1.jpg"
+                  alt="Bright Horizon Corporate Headquarters"
+                />
+
+                <!-- Video Link -->
+                <a
+                  href="https://www.youtube.com/watch?v=MKumqgmpZZQ&ab_channel=g%26mSingapore"
+                  class="glightbox3 video-btn"
+                >
+                  <i class="icofont-play"></i>
+                </a>
+
+                <!-- Promo Video Section -->
+                <div class="promo-video">
+                  <div class="waves-block">
+                    <div class="waves wave-1"></div>
+                    <div class="waves wave-2"></div>
+                    <div class="waves wave-3"></div>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- Company image area end -->
+            <!-- Company content area start -->
             <div
               class="col-lg-6"
               data-aos="fade-left"
               data-aos-duration="1000"
               data-aos-delay="200"
             >
-              <div
-                class="accordion accordion-flush faqs-accordion mt-4 mt-lg-0"
-                id="accordionFlushExample"
-              >
-              
-                <!--  Desktop Support Engineer -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseOne"
-                      aria-expanded="true"
-                      aria-controls="flush-collapseOne"
-                    >
-                      Desktop  Support Engineer
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapseOne"
-                    class="accordion-collapse collapse show"
-                    aria-labelledby="flush-headingOne"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <p class="accordion-body text-secondary">
-                      Our Desktop Support Engineers are skilled at resolving technical issues, providing excellent customer support, and ensuring your systems run smoothly. Their expertise includes:
-                    </p>
-                    <ul>
-                      <li>Hardware and software troubleshooting.</li>
-                      <li>Resolving connectivity and system performance issues.</li>
-                      <li>Providing remote and on-site support to users.</li>
-                      <li>Documenting and escalating critical issues to higher teams.</li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- IT Support Engineer -->
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingFour">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseFour"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseFour"
-                  >
-                    IT Support Engineer
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseFour"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="flush-headingFour"
-                  data-bs-parent="#accordionFlushExample"
-                >
-                  <p class="accordion-body text-secondary">
-                    Our IT Support Engineers provide end-to-end support to keep your IT systems operational. Their expertise includes:
-                  </p>
-                  <ul>
-                    <li>Installing and configuring hardware and software.</li>
-                    <li>Monitoring and optimizing system performance.</li>
-                    <li>Responding to and resolving technical incidents.</li>
-                    <li>Ensuring data security and compliance.</li>
-                  </ul>
-                </div>
-              </div>
-                <!-- Data Center Engineer -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingTwo">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="flush-collapseTwo"
-                    >
-                      Data Center Engineer
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapseTwo"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <p class="accordion-body text-secondary">
-                      Our Data Center Engineers ensure your operations run at peak efficiency. Their responsibilities include:
-                    </p>
-                    <ul>
-                      <li>Configuring and managing servers and storage systems.</li>
-                      <li>Implementing backup and disaster recovery solutions.</li>
-                      <li>Ensuring data center security and availability.</li>
-                      <li>Optimizing power and cooling efficiency.</li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- Network Engineer -->
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingThree">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseThree"
-                      aria-expanded="false"
-                      aria-controls="flush-collapseThree"
-                    >
-                      Network Engineer
-                    </button>
-                  </h2>
-                  <div
-                    id="flush-collapseThree"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="flush-headingThree"
-                    data-bs-parent="#accordionFlushExample"
-                  >
-                    <p class="accordion-body text-secondary">
-                      Our Network Engineers specialize in designing and maintaining reliable network infrastructure. Their expertise includes:
-                    </p>
-                    <ul>
-                      <li>Configuring routers, switches, and firewalls.</li>
-                      <li>Monitoring network performance and troubleshooting issues.</li>
-                      <li>Implementing secure and scalable network solutions.</li>
-                      <li>Conducting network upgrades and migrations.</li>
-                    </ul>
-                  </div>
-                </div>
-                </div> 
-              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Commodi incidunt enim quibusdam perferendis at quidem rem odit
+                eos quae, sed quis pariatur? Ipsam aut numquam expedita neque
+                ipsa temporibus excepturi. Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Neque sint, ipsam voluptates,
+                tempora dicta veritatis animi quasi laborum mollitia impedit
+                consectetur repudiandae asperiores dolore minus, excepturi
+                deleniti voluptate aliquam quaerat!
+              </p>
             </div>
+            <!-- Company content area end -->
           </div>
         </div>
-      </section>      
-       
-      <!-- ========== Achievement section end ========== -->
+      </section>
+
+      <!-- ========== Page Data section End ========== -->
+
       <!-- ========== Fun facts section start ========== -->
       <section class="section-padding counters">
         <div class="container">
@@ -706,7 +648,7 @@ data-aos-delay="300"
           </div>
         </div>
       </section>
-    
+
       <!-- ========== Events section end ========== -->
       <!-- ========== Testimonial section start ========== -->
       <section id="reviews" class="section-padding testimonial bg-one">
@@ -755,7 +697,11 @@ data-aos-delay="300"
                           <i class="icofont-quote-right"></i>
                         </div>
                         <p class="my-4">
-                          "The AI solutions provided by their team transformed our operations. Their predictive analytics reduced downtime by 30%, helping us improve decision-making across departments. Highly skilled and professional team!"
+                          "The AI solutions provided by their team transformed
+                          our operations. Their predictive analytics reduced
+                          downtime by 30%, helping us improve decision-making
+                          across departments. Highly skilled and professional
+                          team!"
                         </p>
                         <div class="testi-card__user-info pt-4">
                           <div class="testimonial__user-info__image">
@@ -785,7 +731,10 @@ data-aos-delay="300"
                           <i class="icofont-quote-right"></i>
                         </div>
                         <p class="my-4">
-                          "Their Machine Learning engineers delivered a custom recommendation engine for our e-commerce platform. The personalization it provided increased our sales by 25%. I couldn't be happier with the results!"
+                          "Their Machine Learning engineers delivered a custom
+                          recommendation engine for our e-commerce platform. The
+                          personalization it provided increased our sales by
+                          25%. I couldn't be happier with the results!"
                         </p>
                         <div class="testi-card__user-info pt-4">
                           <div class="testimonial__user-info__image">
@@ -815,7 +764,10 @@ data-aos-delay="300"
                           <i class="icofont-quote-right"></i>
                         </div>
                         <p class="my-4">
-                          "Their Data Scientists built a robust churn prediction model for our SaaS platform. This proactive approach helped us reduce churn by 20% in just three months. Amazing work!"
+                          "Their Data Scientists built a robust churn prediction
+                          model for our SaaS platform. This proactive approach
+                          helped us reduce churn by 20% in just three months.
+                          Amazing work!"
                         </p>
                         <div class="testi-card__user-info pt-4">
                           <div class="testimonial__user-info__image">
@@ -845,7 +797,10 @@ data-aos-delay="300"
                           <i class="icofont-quote-right"></i>
                         </div>
                         <p class="my-4">
-                          "The IoT solutions provided by their engineers allowed us to monitor and optimize our supply chain in real time. This innovation has cut costs and increased transparency for our operations."
+                          "The IoT solutions provided by their engineers allowed
+                          us to monitor and optimize our supply chain in real
+                          time. This innovation has cut costs and increased
+                          transparency for our operations."
                         </p>
                         <div class="testi-card__user-info pt-4">
                           <div class="testimonial__user-info__image">
@@ -856,7 +811,9 @@ data-aos-delay="300"
                           </div>
                           <div class="testimonial__user-info__content">
                             <h4 class="mb-0">Ryan Scott</h4>
-                            <p class="mb-0">Director of Operations, GlobalLink</p>
+                            <p class="mb-0">
+                              Director of Operations, GlobalLink
+                            </p>
                           </div>
                         </div>
                       </div>
@@ -869,11 +826,10 @@ data-aos-delay="300"
           </div>
         </div>
       </section>
-      
-      
+
       <!-- ========== Testimonial section end ========== -->
       <!-- ========== CTA v4 section start ========== -->
-      
+
       <!-- ========== CTA v4 section end ========== -->
       <!-- ========== Blog section start ========== -->
       <section id="about" class="section-padding authorv2">
@@ -912,32 +868,31 @@ data-aos-delay="300"
               data-aos-duration="1000"
               data-aos-delay="200"
             >
-            <div class="authorv2__image">
-              <!-- Image Section -->
-              <img
-                class="img-fluid"
-                src="https://images.unsplash.com/photo-1508780709619-79562169bc64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxOTcwMjR8MHwxfGFsbHwxfHx8fHx8fHwxNjExOTI5OTM5&ixlib=rb-1.2.1&q=80&w=800"
-                alt="Bright Horizon Corporate Headquarters"
-              />
-              
-              <!-- Video Link -->
-              <a
-                href="https://youtu.be/dQw4w9WgXcQ"
-                class="glightbox3 video-btn"
-              >
-                <i class="icofont-play"></i>
-              </a>
-            
-              <!-- Promo Video Section -->
-              <div class="promo-video">
-                <div class="waves-block">
-                  <div class="waves wave-1"></div>
-                  <div class="waves wave-2"></div>
-                  <div class="waves wave-3"></div>
+              <div class="authorv2__image">
+                <!-- Image Section -->
+                <img
+                  class="img-fluid"
+                  src="https://images.unsplash.com/photo-1508780709619-79562169bc64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxOTcwMjR8MHwxfGFsbHwxfHx8fHx8fHwxNjExOTI5OTM5&ixlib=rb-1.2.1&q=80&w=800"
+                  alt="Bright Horizon Corporate Headquarters"
+                />
+
+                <!-- Video Link -->
+                <a
+                  href="https://youtu.be/dQw4w9WgXcQ"
+                  class="glightbox3 video-btn"
+                >
+                  <i class="icofont-play"></i>
+                </a>
+
+                <!-- Promo Video Section -->
+                <div class="promo-video">
+                  <div class="waves-block">
+                    <div class="waves wave-1"></div>
+                    <div class="waves wave-2"></div>
+                    <div class="waves wave-3"></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            
             </div>
             <!-- Company image area end -->
             <!-- Company content area start -->
@@ -948,7 +903,11 @@ data-aos-delay="300"
               data-aos-delay="200"
             >
               <p>
-                At Othello Financial Services, we are committed to delivering top-notch IT solutions tailored for financial institutions and enterprises. With a focus on innovation, reliability, and efficiency, we empower businesses to achieve their goals and navigate the complexities of the digital age.
+                At Othello Financial Services, we are committed to delivering
+                top-notch IT solutions tailored for financial institutions and
+                enterprises. With a focus on innovation, reliability, and
+                efficiency, we empower businesses to achieve their goals and
+                navigate the complexities of the digital age.
               </p>
               <div class="authorv2__content">
                 <div class="authorv2__list">
@@ -963,7 +922,9 @@ data-aos-delay="300"
                     </div>
                     <div class="col-6 mb-3">
                       <h4>Head Office:</h4>
-                      <p class="mb-0">Nishinomiya City, Hyogo Prefecture, 663-8035, Japan</p>
+                      <p class="mb-0">
+                        Nishinomiya City, Hyogo Prefecture, 663-8035, Japan
+                      </p>
                     </div>
                     <div class="col-6 mb-3">
                       <h4>Capital:</h4>
@@ -971,11 +932,15 @@ data-aos-delay="300"
                     </div>
                     <div class="col-6 mb-3">
                       <h4>Core Services:</h4>
-                      <p class="mb-0">IT Support Services, AI Services, Web development</p>
+                      <p class="mb-0">
+                        IT Support Services, AI Services, Web development
+                      </p>
                     </div>
                     <div class="col-6">
                       <h4>Board Member:</h4>
-                      <p class="mb-0">Representative Director Takahashi Shojiro</p>
+                      <p class="mb-0">
+                        Representative Director Takahashi Shojiro
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -1002,7 +967,7 @@ data-aos-delay="300"
           </div>
         </div>
       </section>
-      
+
       <!-- ========== Blog section end ========== -->
       <!-- ========== CTA v3 section start ========== -->
       <section id="ctav3" class="ctav3 bg-one section-padding">
@@ -1018,14 +983,21 @@ data-aos-delay="300"
                 Do you have a question? <br />
                 Feel free to contact us.
               </h2>
-             
+              <h2
+                class="display-4 m-25px-b"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+              >
+                <a href="tel:610383766284">0798-68-2338</a>
+              </h2>
               <a
                 href="#contact"
                 class="smooth button button__primary"
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="250"
-                ><span>+81 798-68-2338</span></a
+                ><span>Send us a message</span></a
               >
               <div class="ctav3__content__icon">
                 <i class="icofont-read-book"></i>
@@ -1034,10 +1006,157 @@ data-aos-delay="300"
           </div>
         </div>
       </section>
-      
+
       <!-- ========== CTA v3 section end ========== -->
       <!-- ========== Contact section start ========== -->
- 
+      <section id="contact" class="p-80px-tb bg-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
+              <div class="section-title-center text-center">
+                <span
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="150"
+                  >Contact Us</span
+                >
+                <h2
+                  class="display-6"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                >
+                  Get in Touch with Othello Financial Services
+                </h2>
+                <div
+                  class="section-divider divider-traingle"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="250"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Contact form area start -->
+            <div
+              class="col-lg-8 col-md-6 col-sm-12 m-25px-b"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <div class="contact-form-box">
+                <form id="contact-form" method="post" action="php/sendmail.php">
+                  <div class="message col">
+                    <p class="email-loading alert alert-warning">
+                      <img
+                        src="assets/images/loading.gif"
+                        alt=""
+                      />&nbsp;&nbsp;&nbsp;Sending...
+                    </p>
+                    <p class="email-success alert alert-success">
+                      <i class="icofont-check-circled"></i> Your message has
+                      been successfully sent.
+                    </p>
+                    <p class="email-failed alert alert-danger">
+                      <i class="icofont-close-circled"></i> Something went
+                      wrong!
+                    </p>
+                  </div>
+                  <div class="mb13">
+                    <input
+                      name="name"
+                      class="contact-name"
+                      id="contact-name"
+                      type="text"
+                      placeholder="Your Name"
+                      required=""
+                    />
+                  </div>
+                  <div class="mb13">
+                    <input
+                      name="email"
+                      class="contact-email"
+                      id="contact-email"
+                      type="email"
+                      placeholder="Your Email"
+                      required=""
+                    />
+                  </div>
+                  <div class="mb13">
+                    <input
+                      name="subject"
+                      class="contact-subject"
+                      id="contact-subject"
+                      type="text"
+                      placeholder="Subject"
+                      required=""
+                    />
+                  </div>
+                  <div class="mb30">
+                    <textarea
+                      name="message"
+                      class="contact-message"
+                      id="contact-message"
+                      placeholder="Your Message"
+                      required=""
+                    ></textarea>
+                  </div>
+                  <button class="button button__primary align-items-center">
+                    <span>Send Now</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <!-- Contact form area end -->
+            <!-- Contact information start -->
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 m-25px-b"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <div class="contact__address p-30px">
+                <ul class="contact__address__content">
+                  <li>
+                    <span>Address:</span> 2nd Floor, Tsukamoto Building, 1-12
+                    Kitaguchicho, Nishinomiya City, Hyogo Prefecture, 663-8035
+                  </li>
+                  <li>
+                    <span>Phone:</span><a href="tel:1124447900">0798-68-2338</a>
+                  </li>
+                  <li>
+                    <span>Email:</span
+                    ><a href="mailto:support@othello-fs.com"
+                      >support@othello-fs.co.jp</a
+                    >
+                  </li>
+                </ul>
+                <h4>Connect with Us</h4>
+                <ul class="social-icon mt-3">
+                  <li>
+                    <a href="#"><i class="icofont-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icofont-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icofont-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icofont-youtube-play"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icofont-whatsapp"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Contact information end -->
+          </div>
+        </div>
+      </section>
+
       <!-- ========== Contact section end ========== -->
       <!-- ========== Footer section Start ========== -->
       <footer class="footer bg-one overflow-hidden">
@@ -1060,10 +1179,11 @@ data-aos-delay="300"
                   </div>
                   <div class="text">
                     <p>
-                      Othello Financial Services is dedicated to providing innovative
-                      IT solutions and support for businesses worldwide. With a focus
-                      on reliability, security, and efficiency, we help enterprises
-                      achieve their goals in a rapidly evolving digital landscape.
+                      Othello Financial Services is dedicated to providing
+                      innovative IT solutions and support for businesses
+                      worldwide. With a focus on reliability, security, and
+                      efficiency, we help enterprises achieve their goals in a
+                      rapidly evolving digital landscape.
                     </p>
                   </div>
                 </div>
@@ -1101,7 +1221,10 @@ data-aos-delay="300"
                   <ul class="info">
                     <li>
                       <i class="icofont-google-map"></i>
-                      <a href="#">2nd Floor, Tsukamoto Building, 1-12 Kitaguchicho, Nishinomiya City, Hyogo Prefecture, 663-8035</a>
+                      <a href="#"
+                        >2nd Floor, Tsukamoto Building, 1-12 Kitaguchicho,
+                        Nishinomiya City, Hyogo Prefecture, 663-8035</a
+                      >
                     </li>
                     <li>
                       <i class="icofont-email"></i>
@@ -1111,7 +1234,7 @@ data-aos-delay="300"
                     </li>
                     <li>
                       <i class="icofont-phone"></i>
-                      <a href="tel:+11234457900">+81 798-68-2338</a>
+                      <a href="tel:+11234457900">0798-68-2338</a>
                     </li>
                   </ul>
                   <ul class="social-icon">
@@ -1143,8 +1266,8 @@ data-aos-delay="300"
                   </div>
                   <div class="text">
                     <p>
-                      Stay updated with the latest insights and solutions from Othello
-                      Financial Services. Subscribe now!
+                      Stay updated with the latest insights and solutions from
+                      Othello Financial Services. Subscribe now!
                     </p>
                   </div>
                   <form action="assets/subscribe/subscribe.php" id="subscribe">
@@ -1180,7 +1303,8 @@ data-aos-delay="300"
             <div class="row">
               <div class="col-12">
                 <p class="m-0 text-center">
-                  &copy; 2024 Othello Financial Services. All rights reserved. Crafted by Othello Team.
+                  &copy; 2024 Othello Financial Services. All rights reserved.
+                  Crafted by Othello Team.
                   <!-- with <i class="icofont-heart"></i> by Othello Team. -->
                 </p>
               </div>
@@ -1188,7 +1312,7 @@ data-aos-delay="300"
           </div>
         </div>
       </footer>
-      
+
       <!-- ========== Footer section End ========== -->
     </div>
     <!--====== jquery js ======-->
